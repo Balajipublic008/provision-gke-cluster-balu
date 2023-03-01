@@ -1,2 +1,2 @@
-project_id = "REPLACE_ME"
+project_id = "cloud-sql-project-379012"
 region     = "us-central1"

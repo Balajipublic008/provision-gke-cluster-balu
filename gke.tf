@@ -1,6 +1,6 @@
 variable "gke_username" {
   default     = ""
-  description = "gke username"
+  description = "balaji-gke-1"
 }
 
 variable "gke_password" {

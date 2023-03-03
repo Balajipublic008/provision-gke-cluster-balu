@@ -3,7 +3,7 @@
 resource "google_container_cluster" "primary" {
   name     = "${var.project_id}-balu-gke"
   location = var.region
-  
+
   # We can't create a cluster with no node pool defined, but we want to only use
   # separately managed node pools. So we create the smallest possible default
   # node pool and immediately delete it.
@@ -32,8 +32,8 @@ resource "google_container_node_pool" "primary_nodes" {
     }
 
     # preemptible  = true
-   # machine_type = "n1-standard-1"
-   machine_type = "t3.micro"
+    # machine_type = "n1-standard-1"
+    machine_type = "t3.micro"
     tags         = ["gke-node", "${var.project_id}-gke"]
     metadata = {
       disable-legacy-endpoints = "true"

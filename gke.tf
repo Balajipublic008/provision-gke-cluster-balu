@@ -1,5 +1,5 @@
 
-# GKE cluster
+# GKE_cluster*****
 resource "google_container_cluster" "primary" {
   name     = "${var.project_id}-balu-gke"
   location = var.region
